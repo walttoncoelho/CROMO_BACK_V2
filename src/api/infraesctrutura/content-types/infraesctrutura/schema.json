@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "infraesctruturas",
+  "info": {
+    "singularName": "infraesctrutura",
+    "pluralName": "infraesctruturas",
+    "displayName": "Infraestrutura",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titulo": {
+      "type": "string",
+      "required": true
+    },
+    "imagem_infra": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "infra": {
+      "type": "uid"
+    },
+    "empreendimentos": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::empreendimento.empreendimento",
+      "inversedBy": "infraesctruturas"
+    }
+  }
+}

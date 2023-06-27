@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "nossos_numeros",
+  "info": {
+    "singularName": "nosso-numero",
+    "pluralName": "nossos-numeros",
+    "displayName": "Nossos Numeros"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titulo": {
+      "type": "string"
+    },
+    "descricao": {
+      "type": "richtext"
+    },
+    "lotes_vendidos": {
+      "type": "string"
+    },
+    "casas_construidas": {
+      "type": "string"
+    },
+    "km_de_asfaltos": {
+      "type": "string"
+    },
+    "sonhos_realizados": {
+      "type": "string"
+    }
+  }
+}

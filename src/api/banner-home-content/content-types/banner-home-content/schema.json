@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "banner_home_contents",
+  "info": {
+    "singularName": "banner-home-content",
+    "pluralName": "banner-home-contents",
+    "displayName": "Banner Home Content"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titulo": {
+      "type": "string"
+    },
+    "banner_Desktop": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "banner_Mobile": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

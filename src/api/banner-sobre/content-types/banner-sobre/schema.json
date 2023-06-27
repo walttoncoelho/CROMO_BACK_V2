@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "banner_sobres",
+  "info": {
+    "singularName": "banner-sobre",
+    "pluralName": "banner-sobres",
+    "displayName": "Banner Sobre Topo",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titulo": {
+      "type": "string"
+    },
+    "banner_desktop": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "banner_mobile": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

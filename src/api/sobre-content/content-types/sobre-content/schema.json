@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sobre_contents",
+  "info": {
+    "singularName": "sobre-content",
+    "pluralName": "sobre-contents",
+    "displayName": "Sobre Content"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titulo": {
+      "type": "string"
+    },
+    "descricao": {
+      "type": "richtext"
+    },
+    "subtitulo": {
+      "type": "string"
+    },
+    "resumo": {
+      "type": "richtext"
+    }
+  }
+}

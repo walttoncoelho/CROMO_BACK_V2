@@ -1,0 +1,13 @@
+{
+    "routes": [
+      {
+        "method": "GET",
+        "path": "/empreendimentos/:id",
+        "handler": "empreendimento.findOne",
+        "config": {
+          "policies": []
+        }
+      }
+    ]
+  }
+  

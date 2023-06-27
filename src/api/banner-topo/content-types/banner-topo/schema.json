@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "banner_topos",
+  "info": {
+    "singularName": "banner-topo",
+    "pluralName": "banner-topos",
+    "displayName": "Banner Home Topo",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titulo": {
+      "type": "string",
+      "required": true
+    },
+    "banner_desktop": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "banner_mobile": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

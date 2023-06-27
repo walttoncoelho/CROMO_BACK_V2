@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "banner_sobre_contents",
+  "info": {
+    "singularName": "banner-sobre-content",
+    "pluralName": "banner-sobre-contents",
+    "displayName": "Banner Sobre Content"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titulo": {
+      "type": "string"
+    },
+    "bannerDesktop": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "banner_mobile": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "kind": "collectionType",
+  "collectionName": "empreendimentos",
+  "info": {
+    "singularName": "empreendimento",
+    "pluralName": "empreendimentos",
+    "displayName": "Empreendimentos",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "vendido": {
+      "type": "boolean"
+    },
+    "destaque": {
+      "type": "boolean"
+    },
+    "descricao": {
+      "type": "richtext"
+    },
+    "quantidade_lote": {
+      "type": "integer"
+    },
+    "area_lote": {
+      "type": "decimal"
+    },
+    "status_construcao": {
+      "type": "enumeration",
+      "enum": [
+        "Obra entregue",
+        "Em construção"
+      ]
+    },
+    "capa_home": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "planta_baixa": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "galeria_empreendimento": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "titulo": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "titulo"
+    },
+    "tipo_empreendimento": {
+      "type": "enumeration",
+      "enum": [
+        "Lotes comerciais & residenciais",
+        "Empreendimentos Privados"
+      ]
+    },
+    "logo_empreendimento": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "infraesctruturas": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::infraesctrutura.infraesctrutura",
+      "mappedBy": "empreendimentos"
+    },
+    "latitude": {
+      "type": "float"
+    },
+    "longitude": {
+      "type": "float"
+    }
+  }
+}
